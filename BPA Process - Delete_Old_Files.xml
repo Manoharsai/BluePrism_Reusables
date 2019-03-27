@@ -1,0 +1,2366 @@
+﻿<process name="Delete_Old_Files" version="1.0" bpversion="5.0.10.0" narrative="" preferredid="fc7cf4e6-b392-4b37-8634-6ce7cfe3d520">
+  <view>
+    <camerax>88</camerax>
+    <cameray>63</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="9204efdc-6c87-4b9b-bded-28857b235e50" type="Normal" published="False">
+    <name>Delete Completed</name>
+    <view>
+      <camerax>58</camerax>
+      <cameray>69</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="58af3824-3c49-423d-8e8a-db9457c4996b" type="Normal" published="False">
+    <name>Delete MsraFiles</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>21</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="84acf59f-889d-49e7-9dc3-5dd83f624af4" type="Normal" published="False">
+    <name>Delete Processed</name>
+    <view>
+      <camerax>-19</camerax>
+      <cameray>-9</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="d130629c-7366-46e7-8bde-cc92adda1550" type="Normal" published="False">
+    <name>Delete Logs</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="4b66b354-dd02-48f6-815b-4fd198d7bef7" type="Normal" published="False">
+    <name>Delete From VMs</name>
+    <view>
+      <camerax>106</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="a50ab45f-7a84-4611-9ebd-394cfca1b090" type="Normal" published="False">
+    <name>Delete ReportMaster Data</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="e32db0f4-aace-4aa4-886d-b2fb813925ab" type="Normal" published="False">
+    <name>Delete Old Folders UAT</name>
+    <view>
+      <camerax>-20</camerax>
+      <cameray>168</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="f8c45f97-52d4-431f-9e41-ba187e11cb8f" type="Normal" published="False">
+    <name>Delete Old Folders Prod</name>
+    <view>
+      <camerax>92</camerax>
+      <cameray>63</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="af5fe245-8a31-40f1-8902-4f0a22540d45" type="Normal" published="False">
+    <name>Delete Old Folders UAT 2</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>21</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="255987a5-6743-4a10-98fb-d3ef15c22991" type="Normal" published="False">
+    <name>Delete Old Folders Prod 2</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="2d9f4bb5-d274-4ae3-b89f-3ffc1d7489e4" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0d8b9e27-e24f-45e9-9819-6b875fa23eb9</onsuccess>
+  </stage>
+  <stage stageid="b4ff158a-9b70-4655-9782-184bb5e991af" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="51e661d9-8a86-4a2d-9046-06bbd34b34e6" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-255</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="75bdd31e-7fac-44d3-94e1-db59c57ed327" name="Delete Completed" type="SubSheetInfo">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="2cf5089c-550e-49e1-8834-4edda987f1b1" name="Start" type="Start">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>5f83c624-0a48-445e-b95d-ef64810e59cb</onsuccess>
+  </stage>
+  <stage stageid="3e135769-b328-49ad-883e-ca861c64bb54" name="End" type="End">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>240</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="5f83c624-0a48-445e-b95d-ef64810e59cb" name="MSRATools Exists" type="Action">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[VMs Path]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;VMs&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="Folder" />
+    </outputs>
+    <onsuccess>ee160146-5e45-4d4f-ad58-a879de71fda5</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="9e6264ac-9c13-4df2-9bb8-a089c70cb777" name="VMs Path" type="Collection">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="VMs" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp01\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp02\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp03\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp05\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp07\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp08\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp09\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp10\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabph01\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="b78a0159-0d25-47a0-a0a3-fdd9b5af950c" name="Exists" type="Data">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-150</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="be4c2ffc-ff8a-4709-9bfa-19d04a005f9b" name="Folder" type="Data">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-180</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8da1b9b5-2ae1-4c0f-b967-bbe14e2c77f8" name="Row Index value" type="Data">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8416b766-9650-4e29-9c48-2ff60bddda27" name="RowIndex" type="Decision">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>f04cd63b-d61f-4dc2-b020-c1fcf5278152</ontrue>
+    <onfalse>3e135769-b328-49ad-883e-ca861c64bb54</onfalse>
+  </stage>
+  <stage stageid="ee160146-5e45-4d4f-ad58-a879de71fda5" name="Row Increment" type="Calculation">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>8416b766-9650-4e29-9c48-2ff60bddda27</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="9db95e21-122a-454b-a7bb-4bdd5fffb1f8" name="Folder" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">\\azpmsrabp02\e$\MSRATools\MS RAS Supporting Files\MSRA\Completed</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f04cd63b-d61f-4dc2-b020-c1fcf5278152" name="Delete_Old Files_Completed" type="Action">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+    </inputs>
+    <onsuccess>5f83c624-0a48-445e-b95d-ef64810e59cb</onsuccess>
+    <resource object="Delt_Files" action="Delete_Files_Completed" />
+  </stage>
+  <stage stageid="41c62c64-a919-4381-891a-bfeb1a6a00ee" name="Delete MsraFiles" type="SubSheetInfo">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="96bb3a3b-6172-4bf7-bafd-0b75138100dc" name="Start" type="Start">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>dbb8f5a6-af94-4f02-923a-c3152823c8c8</onsuccess>
+  </stage>
+  <stage stageid="6e1eefe7-a21f-4c1b-93ac-97508c120f35" name="End" type="End">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="2753e56b-f1b3-4818-ba3c-eb7e4d016fa7" name="Delete Processed" type="SubSheetInfo">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-300</displayx>
+    <displayy>-210</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="bac92649-6e6a-4319-9217-5392ccd11c23" name="Start" type="Start">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>31a8747f-67df-41fb-a180-e6b0bdaa30e1</onsuccess>
+  </stage>
+  <stage stageid="022a6c29-8635-4944-94fd-368f084da936" name="End" type="End">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>180</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="98264280-4cf1-4d7c-ae49-5c8c798d9c6a" name="Delete_Old Files_MsraFiles" type="Action">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+    </inputs>
+    <onsuccess>dbb8f5a6-af94-4f02-923a-c3152823c8c8</onsuccess>
+    <resource object="Delt_Files" action="Delete_Files_MsraFiles" />
+  </stage>
+  <stage stageid="65f2878f-ffe0-4dfc-b48e-2f23d3812661" name="Delete_Old Files_Processed" type="Action">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+    </inputs>
+    <onsuccess>31a8747f-67df-41fb-a180-e6b0bdaa30e1</onsuccess>
+    <resource object="Delt_Files" action="Delete_Files_Processed" />
+  </stage>
+  <stage stageid="dbb8f5a6-af94-4f02-923a-c3152823c8c8" name="MSRATools Exists" type="Action">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[VMs Path]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;VMs&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="Folder" />
+    </outputs>
+    <onsuccess>7f72f15f-f4e2-4f2f-90cf-b8b09447bec0</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="dd7f997e-a804-420d-aaef-f4c8b90f1966" name="Exists" type="Data">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="39697a63-e075-4f37-a575-ff5b91b7ebc6" name="Folder" type="Data">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b83336af-63a6-4c6c-870d-7115d5dc45b9" name="Row Index value" type="Data">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-285</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="31a8747f-67df-41fb-a180-e6b0bdaa30e1" name="MSRATools Exists" type="Action">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[VMs Path]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;VMs&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="Folder" />
+    </outputs>
+    <onsuccess>65e740f5-31b0-4c07-89c9-0c37a2f2d326</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="4de4fc9a-f760-42fc-8c59-ce28a762b7e9" name="Exists" type="Data">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="dea0003c-9a96-4760-bb32-defd76360476" name="Folder" type="Data">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-255</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="df1dd6a5-34ed-4955-b436-e05eeacb56bb" name="Row Index value" type="Data">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="88f01b41-11a6-4b75-9f25-4524d0a4bb1b" name="VMs Path" type="Collection">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-315</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="VMs" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp01\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp02\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp03\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp05\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp07\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp08\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp09\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp10\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabph01\e$\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="f851f4dc-dbaa-4af3-a14f-11407a727e92" name="VMs Path" type="Collection">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-315</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="VMs" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp01\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp02\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp03\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp05\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp07\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp08\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp09\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp10\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabph01\e$\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="94af5ab8-a9b7-4d6c-ab34-eb6b3c8ec494" name="Delete Logs" type="SubSheetInfo">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="445e6bd3-b15d-4535-9e85-f3ac9d782d07" name="Start" type="Start">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>61982882-d8c7-4798-9cf9-cf691ac5bdcf</onsuccess>
+  </stage>
+  <stage stageid="a5f81469-6967-4529-8ff3-f630b5dd779d" name="End" type="End">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="6aa1fbc2-73a0-4eb6-8350-8926b372a163" name="Delete_Old Files_Logs" type="Action">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+    </inputs>
+    <onsuccess>61982882-d8c7-4798-9cf9-cf691ac5bdcf</onsuccess>
+    <resource object="Delt_Files" action="Delete_Files_Logs" />
+  </stage>
+  <stage stageid="61982882-d8c7-4798-9cf9-cf691ac5bdcf" name="MSRATools Exists" type="Action">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[VMs Path]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;VMs&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="Folder" />
+    </outputs>
+    <onsuccess>a7061a62-f374-455a-bb70-d6ee3434f847</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="c3f2871a-800b-4228-a1a4-787c58f48dfc" name="Exists" type="Data">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="21332c59-bfb4-432e-9453-96359ec01989" name="Folder" type="Data">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="364a16e7-b238-4538-98f7-5d5064ddc145" name="Row Index value" type="Data">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-285</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="79415b60-d4f4-488e-bf7d-6384241f5855" name="VMs Path" type="Collection">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-315</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="VMs" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp01\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp02\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp03\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp05\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp07\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp08\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp09\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabp10\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="\\azpmsrabph01\e$\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="cd45021f-a3d0-4ba4-a55c-537fb6b33f2a" name="Folders Links" type="Note">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>E:\MSRATools\MS RAS Supporting Files\MSRA\Completed
+E:\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles
+E:\MSRATools\MS RAS Supporting Files\MSRA\Processed
+
+</narrative>
+    <displayx>-165</displayx>
+    <displayy>210</displayy>
+    <displaywidth>240</displaywidth>
+    <displayheight>150</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1dc76dfe-3e57-47ba-9be8-d66054339b9c" name="Max Try" type="Data">
+    <subsheetid>9204efdc-6c87-4b9b-bded-28857b235e50</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-105</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>9</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6fa46b4d-530a-4fc5-ba9b-ec164caab934" name="RowIndex" type="Decision">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>98264280-4cf1-4d7c-ae49-5c8c798d9c6a</ontrue>
+    <onfalse>6e1eefe7-a21f-4c1b-93ac-97508c120f35</onfalse>
+  </stage>
+  <stage stageid="7f72f15f-f4e2-4f2f-90cf-b8b09447bec0" name="Row Increment" type="Calculation">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6fa46b4d-530a-4fc5-ba9b-ec164caab934</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="751badee-6c24-4d6f-aa91-d45cd071b9a3" name="Max Try" type="Data">
+    <subsheetid>58af3824-3c49-423d-8e8a-db9457c4996b</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>9</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cd7f55c5-3f07-4273-afc4-c35ca2c7168b" name="RowIndex" type="Decision">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>65f2878f-ffe0-4dfc-b48e-2f23d3812661</ontrue>
+    <onfalse>022a6c29-8635-4944-94fd-368f084da936</onfalse>
+  </stage>
+  <stage stageid="65e740f5-31b0-4c07-89c9-0c37a2f2d326" name="Row Increment" type="Calculation">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>cd7f55c5-3f07-4273-afc4-c35ca2c7168b</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="7836392d-f20d-4930-9eed-55167d4931ce" name="Max Try" type="Data">
+    <subsheetid>84acf59f-889d-49e7-9dc3-5dd83f624af4</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>9</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="89dd4da2-be88-4181-a8d8-18c8ea0849fd" name="RowIndex" type="Decision">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>6aa1fbc2-73a0-4eb6-8350-8926b372a163</ontrue>
+    <onfalse>a5f81469-6967-4529-8ff3-f630b5dd779d</onfalse>
+  </stage>
+  <stage stageid="a7061a62-f374-455a-bb70-d6ee3434f847" name="Row Increment" type="Calculation">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>89dd4da2-be88-4181-a8d8-18c8ea0849fd</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="896f229c-486f-464f-9844-59dff029da9d" name="Max Try" type="Data">
+    <subsheetid>d130629c-7366-46e7-8bde-cc92adda1550</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>9</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="effb61cd-0eb6-4ff5-912e-3d7ffdda2861" name="Delete From VMs" type="SubSheetInfo">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1d8bdb0d-f073-4cc1-a256-ddad619a6756" name="Start" type="Start">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>45</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a9fd4514-2374-4cc7-83c7-cf55672071b5</onsuccess>
+  </stage>
+  <stage stageid="0947a85b-7a31-4bc6-9783-34e5143ef0af" name="End" type="End">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>210</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="24c97ef9-329c-424b-a07f-43198493a89f" name="VMs Path" type="Collection">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-285</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="VMs" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="VMs" type="text" value="E:\MSRATools\MS RAS Supporting Files\MSRA\Completed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="E:\MSRATools\MS RAS Supporting Files\MSRA\MsraFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="E:\MSRATools\MS RAS Supporting Files\MSRA\Processed" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="E:\MSRATools\User Status tool\UserStatus_Sep 11\logs" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="8cdf71fe-e931-470a-bec6-0cfa175e16c2" name="Exists" type="Data">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="aa65e562-7215-4869-8e72-528016c5b9b0" name="Folder" type="Data">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-135</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="807f1d4f-7ee8-4cb3-a4f2-ebee59518fef" name="Row Index value" type="Data">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-255</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fa6a1baa-2a76-4c71-9e96-5b77e7cbcc34" name="Max Try" type="Data">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-165</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>4</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a9fd4514-2374-4cc7-83c7-cf55672071b5" name="MSRATools Exists" type="Action">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>45</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[VMs Path]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;VMs&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="Folder" />
+    </outputs>
+    <onsuccess>f08c9ed2-0448-4aa6-ac74-2d49b6bc711d</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="beb456f7-32fc-425d-87ae-63bc34cd44ea" name="Delete_Old Files" type="Action">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" expr="[Folder]" />
+    </inputs>
+    <onsuccess>a9fd4514-2374-4cc7-83c7-cf55672071b5</onsuccess>
+    <resource object="Delt_Files" action="Delete_Files_Completed" />
+  </stage>
+  <stage stageid="220e3f84-ef62-4176-9366-70dceddc547c" name="RowIndex" type="Decision">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>beb456f7-32fc-425d-87ae-63bc34cd44ea</ontrue>
+    <onfalse>0947a85b-7a31-4bc6-9783-34e5143ef0af</onfalse>
+  </stage>
+  <stage stageid="f08c9ed2-0448-4aa6-ac74-2d49b6bc711d" name="Row Increment" type="Calculation">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>45</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>220e3f84-ef62-4176-9366-70dceddc547c</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="e87ce547-455b-4d37-b56c-ee1fe13e31f5" name="Delete ReportMaster Data" type="SubSheetInfo">
+    <subsheetid>a50ab45f-7a84-4611-9ebd-394cfca1b090</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="5d5e6b13-cc38-4616-8231-9c0a71eba7bf" name="Start" type="Start">
+    <subsheetid>a50ab45f-7a84-4611-9ebd-394cfca1b090</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>553374f6-61a6-4b31-8467-0a9f94b33163</onsuccess>
+  </stage>
+  <stage stageid="4baefe29-91e2-41bf-923b-6e4460599abe" name="End" type="End">
+    <subsheetid>a50ab45f-7a84-4611-9ebd-394cfca1b090</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="553374f6-61a6-4b31-8467-0a9f94b33163" name="Set Connection" type="Action">
+    <subsheetid>a50ab45f-7a84-4611-9ebd-394cfca1b090</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Server" narrative="The name of the server and, if necessary, instance name of the SQL Server instance to connect to" expr="&quot;azpmsradb01&quot;" />
+      <input type="text" name="Database" narrative="The name of the database to connect to" expr="&quot;MSRANewProd&quot;" />
+      <input type="text" name="User" narrative="If appropriate, the login name to use to connect to SQL Server. If left empty, windows authentication using the current user will be used instead of SQL Server authentication" expr="" />
+      <input type="text" name="Password" narrative="If appropriate, the password to use with the above login name to access SQL Server. Unused for windows authentication" expr="" />
+    </inputs>
+    <onsuccess>3c0a822f-cf43-4734-91bc-c768799bf39d</onsuccess>
+    <resource object="DATA - sql" action="Set Connection" />
+  </stage>
+  <stage stageid="3c0a822f-cf43-4734-91bc-c768799bf39d" name="Delete tabmaster" type="Action">
+    <subsheetid>a50ab45f-7a84-4611-9ebd-394cfca1b090</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Query" narrative="The SQL query to use to perform this action" expr="&quot;delete from tabmaster&quot;" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" narrative="Flag indicating success (True) or failure (False)" stage="Success" />
+      <output type="text" name="Message" narrative="Error message giving detail regarding why this action failed" stage="Message" />
+    </outputs>
+    <onsuccess>d2a18a00-b55f-4e0d-9a5c-f4cbf36003f6</onsuccess>
+    <resource object="DATA - sql" action="Execute" />
+  </stage>
+  <stage stageid="d2a18a00-b55f-4e0d-9a5c-f4cbf36003f6" name="Delete from report master" type="Action">
+    <subsheetid>a50ab45f-7a84-4611-9ebd-394cfca1b090</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Query" narrative="The SQL query to use to perform this action" expr="&quot;delete from reportmaster&quot;" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" narrative="Flag indicating success (True) or failure (False)" stage="Success" />
+      <output type="text" name="Message" narrative="Error message giving detail regarding why this action failed" stage="Message" />
+    </outputs>
+    <onsuccess>4baefe29-91e2-41bf-923b-6e4460599abe</onsuccess>
+    <resource object="DATA - sql" action="Execute" />
+  </stage>
+  <stage stageid="fcdb6713-97ce-45f4-b2dc-5b6064384e47" name="Success" type="Data">
+    <subsheetid>a50ab45f-7a84-4611-9ebd-394cfca1b090</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>210</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="50b3b8df-1f4c-480e-9e45-aac3335af590" name="Message" type="Data">
+    <subsheetid>a50ab45f-7a84-4611-9ebd-394cfca1b090</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-135</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="41797f63-2c5b-4641-9b1c-f173ef170fca" name="Delete Old Folders UAT" type="SubSheetInfo">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="660bf20a-6bf2-49e5-a2e3-779504c6f60b" name="Start" type="Start">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>270e6fca-0f08-4636-a179-dece01da7caa</onsuccess>
+  </stage>
+  <stage stageid="d5fc5e1c-dd1b-46a3-8fa1-95bebddc57ac" name="End" type="End">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>405</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ea6e919b-e87d-4ec9-97e7-bf3a643e733d" name="Delete old Folders1" type="Action">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="sDirectory" expr="[sDirectory]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Mesg" stage="Mesg" />
+      <output type="flag" name="Success" stage="Success" />
+    </outputs>
+    <onsuccess>3f0b30e8-0568-4c43-a910-7666eacd9361</onsuccess>
+    <resource object="Delt_Files" action="Delete Old Folders" />
+  </stage>
+  <stage stageid="ecaa5964-58e2-4c25-bdf8-5765cb2ddcf6" name="Mesg" type="Data">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3c8ba136-eda0-494a-adee-c405599380b3" name="Success" type="Data">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-375</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f7ee6881-b1e6-4229-8187-5d1264e9f5bc" name="sDirectory" type="Data">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-300</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\Users\v-prga\Downloads\MSRATesting\MS RAS Supporting Files\MSRA</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e6efcc3a-8ca0-490a-8d92-a3787f0a34f8" name="Exists" type="Data">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d42807d6-cf95-45f7-95b5-c414594da758" name="Folder" type="Data">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-345</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="da1b0a29-1b70-47b4-a281-edcd9fff4caa" name="Row Index value" type="Data">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-360</displayx>
+    <displayy>195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f99329ed-aa50-425a-b3b5-01c1b6e8af94" name="Max Try" type="Data">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-285</displayx>
+    <displayy>195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>4</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9381c942-fdb1-467e-9e96-54991fd7384c" name="RowIndex" type="Decision">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>240</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>ea6e919b-e87d-4ec9-97e7-bf3a643e733d</ontrue>
+    <onfalse>d5fc5e1c-dd1b-46a3-8fa1-95bebddc57ac</onfalse>
+  </stage>
+  <stage stageid="50ecae8e-6cbc-4c84-ac11-b7542ed63cb2" name="Row Increment" type="Calculation">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>240</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>9381c942-fdb1-467e-9e96-54991fd7384c</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="270e6fca-0f08-4636-a179-dece01da7caa" name="Get Prerefreshed Folders Regions UAT" type="Action">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" narrative="The folder in which to look for sub-folders" expr="[Prod_Prerefreshed Files Path UAT]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Mesg" />
+      <output type="collection" name="Folders" narrative="A collection of the sub-folders found within the folder" stage="Prerefreshed Region Folders UAT" />
+    </outputs>
+    <onsuccess>a74bbcb1-c23a-4d40-966b-8220f863cbe8</onsuccess>
+    <resource object="Utility - File Management" action="Get Folders" />
+  </stage>
+  <stage stageid="30ce4ccd-dd0c-45d5-82c4-068a339d7dd7" name="Prerefreshed Region Folders UAT" type="Collection">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-255</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4a8aa793-a37f-4a8b-afd1-5041053fc9b8" name="Prod_Prerefreshed Files Path UAT" type="Data">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-345</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">\\azpmsrabp07\e$\SharedPath\Testing_MSRA_UAT_PreprocessedReport\UAT_TEST</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3f0b30e8-0568-4c43-a910-7666eacd9361" name="MSRATools UAT Exists" type="Action">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[Prerefreshed Region Folders UAT]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;Path&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="sDirectory" />
+    </outputs>
+    <onsuccess>50ecae8e-6cbc-4c84-ac11-b7542ed63cb2</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="d6fd00a3-c528-4f29-b4b4-f34d43155418" name="Delete Old Folders Prod" type="SubSheetInfo">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-150</displayx>
+    <displayy>-210</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="dc2deaa4-a4a8-4720-8155-b8a6bf3d7419" name="Start" type="Start">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>-150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>89e9859c-e17d-4eae-9307-354f1d1dd85a</onsuccess>
+  </stage>
+  <stage stageid="88934be5-0f10-4015-bb79-bf683e3ab1ca" name="End" type="End">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>270</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="b20c37d1-652b-4cf4-b718-54a9a166f2fd" name="Delete Old Folders UAT 2" type="SubSheetInfo">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-255</displayx>
+    <displayy>-255</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="62a59262-5e16-43bc-9736-f962f81ecf08" name="Start" type="Start">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>30</displayx>
+    <displayy>-225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>453b3f95-1eaa-4b62-8a29-98c9fc8e2d6e</onsuccess>
+  </stage>
+  <stage stageid="d906010f-cf35-45e3-b6a5-eeb1d42ca701" name="Delete Old Folders Prod 2" type="SubSheetInfo">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="901b69cb-4cb5-4e93-9769-79fe7cd14606" name="Start" type="Start">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>78a9a00c-71ec-4c3f-9721-c8a86b1271ed</onsuccess>
+  </stage>
+  <stage stageid="93f1ab21-0578-4fc9-b478-3fb2ff7c7c4d" name="End" type="End">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>225</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="55f57a21-6c39-453f-b77e-d00633ce4ae3" name="Delete old Folders1" type="Action">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="sDirectory" expr="[sDirectory]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Mesg" stage="Mesg" />
+      <output type="flag" name="Success" stage="Success" />
+    </outputs>
+    <onsuccess>c082975c-7e74-4b16-be34-90d47e7fcde5</onsuccess>
+    <resource object="Delt_Files" action="Delete Old Folders" />
+  </stage>
+  <stage stageid="8a8a4142-d913-494d-bb18-a507a38c8848" name="Mesg" type="Data">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-135</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="176fbc5a-8a76-4001-8e55-ca2d4b46f149" name="Success" type="Data">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-300</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d5eda0d2-257f-453c-939f-ac64dc733167" name="sDirectory" type="Data">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\Users\v-prga\Downloads\MSRATesting\MS RAS Supporting Files\MSRA</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d7efa945-02f9-4c9d-b817-eacab4518b91" name="Exists" type="Data">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0722303f-8de6-4243-9eb3-ba9dfa03cac8" name="Folder" type="Data">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-285</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bdfa51c2-386f-43f8-a7b7-a7c89df779b3" name="Row Index value" type="Data">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-300</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="49838d5e-f9d2-4b6a-9f5c-20b9c01f0660" name="Max Try" type="Data">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>4</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="75d2c5eb-d8e9-4aa5-9ad7-ad24fdeb34cc" name="RowIndex" type="Decision">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>225</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>55f57a21-6c39-453f-b77e-d00633ce4ae3</ontrue>
+    <onfalse>88934be5-0f10-4015-bb79-bf683e3ab1ca</onfalse>
+  </stage>
+  <stage stageid="16087a72-c98c-49f6-86ff-2df92dceb6e0" name="Row Increment" type="Calculation">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>150</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>75d2c5eb-d8e9-4aa5-9ad7-ad24fdeb34cc</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="3e5a5a84-3043-41d6-8026-a31b54681e07" name="Prod_Prerefreshed Files Path Prod" type="Data">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">\\azpmsrabp06\e$\MSRATools\SharedPath\PreprocessedReport\UAT</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="aab0414f-ae79-4510-a9e2-6f57f8f42d9b" name="Prerefreshed Region Folders Prod" type="Collection">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-150</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="89e9859c-e17d-4eae-9307-354f1d1dd85a" name="Get Prerefreshed Folders Regions UAT" type="Action">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Folder" narrative="The folder in which to look for sub-folders" expr="[Prod_Prerefreshed Files Path Prod]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Success" narrative="True if successful" stage="Success" />
+      <output type="text" name="Message" narrative="An error message if unsuccessful" stage="Mesg" />
+      <output type="collection" name="Folders" narrative="A collection of the sub-folders found within the folder" stage="Prerefreshed Region Folders Prod" />
+    </outputs>
+    <onsuccess>6a26786f-e821-4634-aa86-c0690e47f5f2</onsuccess>
+    <resource object="Utility - File Management" action="Get Folders" />
+  </stage>
+  <stage stageid="c082975c-7e74-4b16-be34-90d47e7fcde5" name="MSRATools UAT Exists" type="Action">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[Prerefreshed Region Folders Prod]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;Path&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="sDirectory" />
+    </outputs>
+    <onsuccess>16087a72-c98c-49f6-86ff-2df92dceb6e0</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="f4120234-8256-4107-99dd-f9a23b7acf3e" name="Delete old Folders1" type="Action">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="sDirectory" expr="[sDirectory]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Mesg" stage="Mesg" />
+      <output type="flag" name="Success" stage="Success" />
+    </outputs>
+    <onsuccess>453b3f95-1eaa-4b62-8a29-98c9fc8e2d6e</onsuccess>
+    <resource object="Delt_Files" action="Delete Old Folders" />
+  </stage>
+  <stage stageid="11f9e64a-cf53-4815-be8b-315b7a41748d" name="Mesg" type="Data">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="25e14028-910a-475a-a841-2c2996fc7154" name="Success" type="Data">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-375</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2344b4e0-57ab-45d7-b9ba-3233c8a8c87f" name="sDirectory" type="Data">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-300</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\Users\v-prga\Downloads\MSRATesting\MS RAS Supporting Files\MSRA</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9d5138ff-3e2f-498d-853d-560057fd4782" name="Exists" type="Data">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-285</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="70d7b57a-7f10-434b-91ec-e12491f2508a" name="Folder" type="Data">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-360</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a0e33946-7532-4553-abbe-d8f139a0727e" name="Row Index value" type="Data">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-375</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a62c16d2-5410-4e7f-b33c-dee95a7150e4" name="Max Try" type="Data">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-300</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>2</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="84a6bc63-ef2d-4198-8940-777eb6c3731e" name="RowIndex" type="Decision">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>f4120234-8256-4107-99dd-f9a23b7acf3e</ontrue>
+    <onfalse>2f31c7cc-4924-4c2b-8224-12b7d05d8597</onfalse>
+  </stage>
+  <stage stageid="bfd09173-acd7-4d51-8aed-c6e0a31dfff0" name="Row Increment" type="Calculation">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>30</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>84a6bc63-ef2d-4198-8940-777eb6c3731e</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="418f5334-74fe-417d-87e0-1f8b2c1c2981" name="VMs Path_UAT" type="Collection">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-315</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="VMs" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="VMs" type="text" value="E:\SharedPath\AutomationOutput\Testing_MSRA_UAT_RefreshedFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="E:\SharedPath\AutomationOutput\RefreshedFiles" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="da35061b-fcb5-4588-8953-b5f6cfa07aba" name="Prod_Prerefreshed Files Path UAT" type="Data">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-390</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">\\azpmsrabp07\e$\SharedPath\Testing_MSRA_UAT_PreprocessedReport\UAT_TEST</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="453b3f95-1eaa-4b62-8a29-98c9fc8e2d6e" name="MSRATools UAT Exists" type="Action">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>30</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[VMs Path_UAT]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;VMs&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="sDirectory" />
+    </outputs>
+    <onsuccess>bfd09173-acd7-4d51-8aed-c6e0a31dfff0</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="2f31c7cc-4924-4c2b-8224-12b7d05d8597" name="End2" type="End">
+    <subsheetid>af5fe245-8a31-40f1-8902-4f0a22540d45</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="b4df3e4a-66f8-4d93-bd54-dae84e0be05c" name="Delete old Folders1" type="Action">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="sDirectory" expr="[sDirectory]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Mesg" stage="Mesg" />
+      <output type="flag" name="Success" stage="Success" />
+    </outputs>
+    <onsuccess>78a9a00c-71ec-4c3f-9721-c8a86b1271ed</onsuccess>
+    <resource object="Delt_Files" action="Delete Old Folders" />
+  </stage>
+  <stage stageid="4d3436ee-cbe9-48f4-b528-00d8eb1ef57c" name="Mesg" type="Data">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-255</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5a05ad1b-3c55-40e3-a3aa-5601cb1b7bc7" name="Success" type="Data">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-405</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="18a3becb-e780-4db2-bedd-c41ec091e07d" name="sDirectory" type="Data">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-330</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\Users\v-prga\Downloads\MSRATesting\MS RAS Supporting Files\MSRA</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ded1bc0e-4c86-4729-96c2-90850b7c0800" name="VMs Path_Prod" type="Collection">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-315</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="VMs" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="VMs" type="text" value="E:\MSRATools\SharedPath\RefreshedFiles" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="E:\MSRATools\SharedPath\PreprocessedReport\UAT\APAC HQ" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="E:\MSRATools\SharedPath\PreprocessedReport\UAT\Argentina" />
+      </row>
+      <row>
+        <field name="VMs" type="text" value="E:\MSRATools\SharedPath\PreprocessedReport\UAT" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="df680b88-4746-4392-9b75-644146bbb99f" name="Exists" type="Data">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-300</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a5a1eb7b-007b-4abc-b9e8-b857424dc6e0" name="Folder" type="Data">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-375</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c56b55a3-c79c-485a-9225-58dd4e059b5f" name="Row Index value" type="Data">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-390</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="78c16f22-03b9-4948-8ef3-8e22eefd9c48" name="Max Try" type="Data">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-315</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>2</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f51b65d3-01fa-43d8-9050-cbc3dce3de51" name="RowIndex" type="Decision">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Row Index value]&lt;[Max Try]" />
+    <ontrue>b4df3e4a-66f8-4d93-bd54-dae84e0be05c</ontrue>
+    <onfalse>93f1ab21-0578-4fc9-b478-3fb2ff7c7c4d</onfalse>
+  </stage>
+  <stage stageid="1ab7132d-3b14-4b06-b8e6-1abd4fd42054" name="Row Increment" type="Calculation">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f51b65d3-01fa-43d8-9050-cbc3dce3de51</onsuccess>
+    <calculation expression="[Row Index value]+1" stage="Row Index value" />
+  </stage>
+  <stage stageid="5d819197-851a-4e41-9158-46e3aeef7aa5" name="Prod_Prerefreshed Files Path Prod" type="Data">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-390</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">E:\MSRATools\SharedPath\PreprocessedReport\UAT</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="78a9a00c-71ec-4c3f-9721-c8a86b1271ed" name="MSRATools UAT Exists" type="Action">
+    <subsheetid>255987a5-6743-4a10-98fb-d3ef15c22991</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="collection" name="Collection" narrative="The collection to read." expr="[VMs Path_Prod]" />
+      <input type="text" name="Field Name" narrative="The field within the collection to read." expr="&quot;VMs&quot;" />
+      <input type="number" name="Row Index" narrative="The row index within the collection to read from. The index is from 0 to N-1 (where N is the total number of rows in the collection)." expr="[Row Index value]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value Read" narrative="The value of the requested field as text." stage="sDirectory" />
+    </outputs>
+    <onsuccess>1ab7132d-3b14-4b06-b8e6-1abd4fd42054</onsuccess>
+    <resource object="Utility - Collection Manipulation" action="Read Collection Field" />
+  </stage>
+  <stage stageid="6a26786f-e821-4634-aa86-c0690e47f5f2" name="Get Number Of Rows" type="Action">
+    <subsheetid>f8c45f97-52d4-431f-9e41-ba187e11cb8f</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Collection Name" narrative="The name of the collection to act upon" expr="&quot;Prerefreshed Region Folders Prod&quot;" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Count" narrative="The number of rows counted in the collection" stage="Max Try" />
+    </outputs>
+    <onsuccess>c082975c-7e74-4b16-be34-90d47e7fcde5</onsuccess>
+    <resource object="Blueprism.AutomateProcessCore.clsCollectionActions" action="Count Rows" />
+  </stage>
+  <stage stageid="a74bbcb1-c23a-4d40-966b-8220f863cbe8" name="Get Number Of Rows" type="Action">
+    <subsheetid>e32db0f4-aace-4aa4-886d-b2fb813925ab</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Collection Name" narrative="The name of the collection to act upon" expr="&quot;Prerefreshed Region Folders UAT&quot;" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Count" narrative="The number of rows counted in the collection" stage="Max Try" />
+    </outputs>
+    <onsuccess>3f0b30e8-0568-4c43-a910-7666eacd9361</onsuccess>
+    <resource object="Blueprism.AutomateProcessCore.clsCollectionActions" action="Count Rows" />
+  </stage>
+  <stage stageid="0d8b9e27-e24f-45e9-9819-6b875fa23eb9" name="Delete From VMs" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b4ff158a-9b70-4655-9782-184bb5e991af</onsuccess>
+    <processid>4b66b354-dd02-48f6-815b-4fd198d7bef7</processid>
+  </stage>
+  <stage stageid="8582e851-fe97-495d-b8e1-5e8c4754b35e" name="Recover3" type="Recover">
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6ff4aa0b-b861-4bf4-8c68-171f14f8e0cd</onsuccess>
+  </stage>
+  <stage stageid="6ff4aa0b-b861-4bf4-8c68-171f14f8e0cd" name="Exceptions" type="MultipleCalculation">
+    <narrative>
+    </narrative>
+    <displayx>285</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>ac8e0792-4a08-47a3-b0b2-57910d90222e</onsuccess>
+    <steps>
+      <calculation expression="ExceptionType()" stage="Exception type" />
+      <calculation expression="ExceptionDetail()" stage="Exception_Details" />
+    </steps>
+  </stage>
+  <stage stageid="ac8e0792-4a08-47a3-b0b2-57910d90222e" name="Resume3" type="Resume">
+    <narrative>
+    </narrative>
+    <displayx>285</displayx>
+    <displayy>165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b4ff158a-9b70-4655-9782-184bb5e991af</onsuccess>
+  </stage>
+  <stage stageid="820895d6-3f66-4a8d-b6a8-cb6de249b636" name="Stage2" type="Block">
+    <narrative>
+    </narrative>
+    <displayx>-45</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>270</displaywidth>
+    <displayheight>105</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="5cf72eeb-5742-4b2c-92ea-089cfdf431f2" name="Exception_Details" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b5189626-d2f2-4d08-bf44-71898dd65e76" name="Exception type" type="Data">
+    <narrative>
+    </narrative>
+    <displayx>-330</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bc660af6-cf00-460b-9173-354bbf7b7031" name="Recover1" type="Recover">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>285</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>97100b3e-b408-442a-8ac6-7f7f11f53ae0</onsuccess>
+  </stage>
+  <stage stageid="ccd723cc-4295-45f1-84ac-b494d4988479" name="Resume1" type="Resume">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>165</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>beb456f7-32fc-425d-87ae-63bc34cd44ea</onsuccess>
+  </stage>
+  <stage stageid="9398d58a-b6a8-47b4-8643-abda9983fd53" name="Count" type="Calculation">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>
+    </narrative>
+    <displayx>285</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>ccd723cc-4295-45f1-84ac-b494d4988479</onsuccess>
+    <calculation expression="[Retry Count]+1" stage="Retry Count" />
+  </stage>
+  <stage stageid="97100b3e-b408-442a-8ac6-7f7f11f53ae0" name="Retry?" type="Decision">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>
+    </narrative>
+    <displayx>285</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Retry Count]&lt;[Retry Limit]" />
+    <ontrue>9398d58a-b6a8-47b4-8643-abda9983fd53</ontrue>
+    <onfalse>5db6bbe9-87a4-40f7-8dd7-0119de6b7369</onfalse>
+  </stage>
+  <stage stageid="5db6bbe9-87a4-40f7-8dd7-0119de6b7369" name="Throw Exception" type="Exception">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>
+    </narrative>
+    <displayx>435</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception type="System Exception " detail="&quot;Not able to access Folders Please Check Folder exits&quot;" />
+  </stage>
+  <stage stageid="a132f2e5-11ad-47c7-82c7-adbe56ec4cef" name="Retry Limit" type="Data">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>120</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>2</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="19d6f0a4-0c7a-4463-a5b6-a2e2269a3fab" name="Retry Count" type="Data">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>
+    </narrative>
+    <displayx>-225</displayx>
+    <displayy>150</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b34fab74-81ce-4c9b-bcf3-a378067c7f6a" name="Stage3" type="Block">
+    <subsheetid>4b66b354-dd02-48f6-815b-4fd198d7bef7</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>120</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>210</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+</process>
